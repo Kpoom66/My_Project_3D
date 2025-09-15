@@ -1,0 +1,16 @@
+[gd_scene load_steps=3 format=3 uid="uid://da07hh2xkpk5u"]
+
+[ext_resource type="AudioStream" uid="uid://di4rl3q6ub2ma" path="res://Assets/sound/alien-spaceship-roar-287340.mp3" id="1_nk30b"]
+[ext_resource type="AudioStream" uid="uid://fugp7o78714l" path="res://Assets/sound/ambient-soundscapes-006-space-atmosphere-303245.mp3" id="2_wppd8"]
+
+[node name="MusicPlayer" type="AudioStreamPlayer"]
+stream = ExtResource("1_nk30b")
+volume_db = -20.613
+autoplay = true
+parameters/looping = true
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("2_wppd8")
+volume_db = -21.55
+autoplay = true
+parameters/looping = true
